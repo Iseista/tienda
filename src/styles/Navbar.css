@@ -1,0 +1,15 @@
+.nav-bar{
+    display: flex;
+    background-color: beige;
+    justify-content: space-between;
+}
+.nav-items{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+   
+}
+.nav-items li{
+    padding: 5px;
+}

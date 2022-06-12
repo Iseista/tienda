@@ -1,0 +1,21 @@
+.item-product img{
+    height: 300px;
+}
+
+.list-related-product{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  
+    list-style: none;
+   
+}
+.related-product{
+    background-color: blanchedalmond;
+    width: 300px;
+    margin: 8px;
+}
+
+.related-product img{
+    height: 100px;
+}
