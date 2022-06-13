@@ -1,0 +1,23 @@
+.card-login{
+    max-width: 500px;
+    background-color: rgb(94, 148, 148);
+    margin: auto;
+    margin-top: 100px;
+    padding: 10px;
+    border-radius: 8px;
+}
+.card-login input{
+    height: 30px;
+    width: 260px;
+    padding-left: 3px;
+    border-radius: 6px;
+    border: none;
+    margin: 6px;
+}
+.card-login button{
+    margin-top: 5px;
+    margin-left: 3px;
+    border-radius: 6px;
+    padding: 3px;
+    border: none;
+}

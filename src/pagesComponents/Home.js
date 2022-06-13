@@ -22,7 +22,7 @@ const Home = () => {
         .then(res => setCategories(res.data.data.categories))
 
     },[dispatch])
-    console.log(categories)
+    // console.log(categories)
 
     const filterProducts= ()=> {
         dispatch(filteredProducts(search))
@@ -38,7 +38,8 @@ const Home = () => {
             <h1>Home</h1>
             <input type="text" value={search} onChange={e => setSearch(e.target.value)}/>
             <button onClick={filterProducts}>Send</button>
-            <ul>
+            <div className='sections-home'>
+            <ul className='category-card'>
                 {
                     categories.map(category => (
                         <li key={category.id} onClick ={() => selectCategory(category.id)}>
@@ -47,7 +48,7 @@ const Home = () => {
                     ))
                 }
             </ul>
-            <ul>
+            <ul className='list-products-cards'>
             { 
             
                 products.map(product => (
@@ -62,6 +63,7 @@ const Home = () => {
                 ))
             }
             </ul>
+            </div>
         </div> 
     );
 };

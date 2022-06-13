@@ -4,12 +4,14 @@ import { useNavigate, useParams } from "react-router-dom"
 import"../styles/ProductDetail.css"
 import { useDispatch, useSelector} from "react-redux"
 import { filteredCategories } from '../store/slices/products.slice';
+import { addToCart } from '../store/slices/cart.slice';
 
 
 
 const ProductDetail = () => {
 
     const [itemProduct, setItemProduct] = useState([]);
+    const [ quantity, setQuantity] = useState("");
 
     const {id} = useParams();
     const productsList = useSelector(state => state.products);
@@ -32,10 +34,23 @@ const ProductDetail = () => {
 
     },[dispatch, id]);
 
+    const addCart= ()=> {
+        console.log("me ejecute")
+        const purchase = {
+            id:id,
+            quantity: quantity
+
+        }
+        console.log(purchase)
+        dispatch(addToCart(purchase))
+    }
+ 
    
     return (
         <div className='item-product'>
              <h1>{itemProduct.title}</h1>
+             <input type="number"  placeholder = "rate" onChange={e => setQuantity(e.target.value)} value={quantity}/>
+             <button onClick={addCart}>Add to cart</button>
              <img src={itemProduct.productImgs} alt="" />
              <ul className='list-related-product'>
              {
