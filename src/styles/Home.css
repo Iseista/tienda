@@ -1,20 +1,26 @@
 
 .list-products-cards{
+    width: 60%;
+    margin-left: 5em;
+    margin-top: 3em;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-content: flex-start;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
 
 }
 
 .products-card{
     width: 350px;
-    background-color: beige;
+    background:white;
     margin: 8px;
     padding: 5px;
     border-radius: 8px;
     list-style: none;
+    border: 1px solid gray;
+    text-transform: uppercase;
+    color: gray;
 }
 
 .products-card img{
@@ -22,7 +28,10 @@
     margin: 5px;
 }
 .category-card{
-    background-color: darkcyan;
+    background-color: white;
+    border: 1px solid gray;
+    text-transform: uppercase;
+    color: gray;
     width: 200px;
     height: 150px;
     padding: 10px;

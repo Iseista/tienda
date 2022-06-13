@@ -1,19 +1,25 @@
 .nav-bar{
     display: flex;
-    background-color: beige;
+    background-color: tomato;
+    align-items: center;
     justify-content: space-between;
     z-index: 1;
+    
+}
+.nav-bar h3{
+    color: white;
 }
 .nav-items{
     list-style: none;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-   
+
+
 }
 .nav-items li{
     padding: 5px;
-
+    list-style: none;
 }
 .side-bar{
     height: 500px;
@@ -21,4 +27,13 @@
     position: fixed;
     z-index: 99;
     background-color: gray;
+}
+button{
+    background: hsl(145, 77%, 49%);
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    cursor: pointer;
+    border: none;
+    padding: 1em;
 }

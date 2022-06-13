@@ -11,9 +11,9 @@
    
 }
 .related-product{
-    background-color: blanchedalmond;
     width: 300px;
     margin: 8px;
+    border: 1px solid gray;
 }
 
 .related-product img{

@@ -1,10 +1,9 @@
 .card-login{
     max-width: 500px;
-    background-color: rgb(94, 148, 148);
     margin: auto;
     margin-top: 100px;
     padding: 10px;
-    border-radius: 8px;
+    border: 1px solid gray;
 }
 .card-login input{
     height: 30px;
@@ -13,6 +12,7 @@
     border-radius: 6px;
     border: none;
     margin: 6px;
+    border: 1px solid gray;
 }
 .card-login button{
     margin-top: 5px;
@@ -20,4 +20,8 @@
     border-radius: 6px;
     padding: 3px;
     border: none;
+    padding: 1em;
+    background: hsl(145, 77%, 49%);
+    color: white;
+    cursor: pointer;
 }

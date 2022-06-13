@@ -35,7 +35,7 @@ const Home = () => {
 
     return (
         <div>
-            <h1>Home</h1>
+            
             <input type="text" value={search} onChange={e => setSearch(e.target.value)}/>
             <button onClick={filterProducts}>Send</button>
             <div className='sections-home'>
